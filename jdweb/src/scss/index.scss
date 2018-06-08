@@ -1,0 +1,84 @@
+@charset "utf-8";
+$autowidth:1190px;
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+%red{
+  color:#f10215;
+}
+%both{
+  display: block;
+  content: '';
+  width:0;
+  height:0;
+  visibility: hidden;
+  overflow: hidden;
+  clear: both;
+}
+body{
+  background:#f0f3ef ;
+}
+.header{
+  position: relative;
+}
+#bigBox > .header>.adver-top{/*头部隐藏的盒子*/
+  display: none;
+  width:100%;
+  background: blue;
+  .adv-top-auto{
+    position: relative;
+    width:$autowidth;
+    margin:0 auto;
+    height:80px;
+    .top-auto{
+      position: absolute;
+      top:0;
+      left:0;
+      display: block;
+      width:100%;
+      height:80px;
+      background: url("../img/topnav.jpg") no-repeat;
+    }
+    .auto-right{
+      position: absolute;
+      right:0;
+      top:0;
+      width:300px;
+      height:46px;
+      margin-top:17px;
+      &:after{
+        display: block;
+        content: "";
+        width:0;
+        height:0;
+        clear: both;
+        overflow: hidden;
+        visibility: hidden;
+      }
+      li{
+        float: left;
+        margin-right:15px;
+      }
+      .off{
+        position: absolute;
+        top:-10px;
+        right:5px;
+        font-size: 14px;
+        color:#fff;
+        background: black;
+        opacity: 0.3;
+        filter:alpha(opacity=30);
+        width:20px;
+        line-height: 20px;
+        text-align: center;
+        cursor: pointer;
+      }
+    }
+  }
+}
+@import "top-nav";//引入的顶部导航
+@import "search";//引入搜索区域
+@import "banner";//引入广告和网站导航区域
