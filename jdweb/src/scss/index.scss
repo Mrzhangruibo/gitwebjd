@@ -6,6 +6,10 @@ $autowidth:1190px;
 .fr{
   float: right;
 }
+a{
+  text-decoration: none;
+  color: inherit;
+}
 %red{
   color:#f10215;
 }
@@ -18,11 +22,48 @@ $autowidth:1190px;
   overflow: hidden;
   clear: both;
 }
+.mar-bott{
+  margin-bottom: 30px;
+}
+@mixin eillpsis(){
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
 body{
   background:#f0f3ef ;
 }
 .header{
   position: relative;
+}
+.mar-rig{
+  margin-right: 10px;
+}
+.h3h3{
+  h3{
+    width:350px;
+    height:60px;
+    padding:0 20px;
+    line-height: 60px;
+    font-weight: normal;
+    >a{
+      display: block;
+      >b{
+        font-weight: normal;
+        font-size: 22px;
+        color: #222;
+      }
+      >i{
+        font-size: 26px;
+        color: #f10215;
+      }
+      >span{
+        font-size: 14px;
+        color:#999;
+      }
+    }
+
+  }
 }
 #bigBox > .header>.adver-top{/*头部隐藏的盒子*/
   display: none;
@@ -82,3 +123,10 @@ body{
 @import "top-nav";//引入的顶部导航
 @import "search";//引入搜索区域
 @import "banner";//引入广告和网站导航区域
+@import "second-kill";//引入秒杀区域
+@import "main-meeting";//引入主会场区域
+@import "recommended";//引入推荐区域
+@import "speity";//引入特色推荐
+@import "footer";//引入底部
+@import "top-search";//引入顶部跟随滚动条的搜索
+@import "asidebar";//引入侧边栏

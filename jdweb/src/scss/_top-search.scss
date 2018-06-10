@@ -1,0 +1,67 @@
+@charset "utf-8";
+.top-search{
+  position: fixed;
+  width:100%;
+  height:46px;
+  display: none;
+  z-index: 99999;
+  background: #ffffff;
+  border-bottom: 2px solid #f10215;
+  top:0;
+  left:0;
+  .top-search-box{
+    position: relative;
+    width:$autowidth;
+    margin: auto;
+    >a{
+      display: block;
+      float: left;
+      width:125px;
+      height:40px;
+      background: url("../img/sprite.head.png") no-repeat -195px 0;
+    }
+    .top-text{
+      position:absolute;
+      left:320px;
+      width: 555px;
+      top:5px;
+      >input{
+        float: left;
+        vertical-align: middle;
+        width:500px;
+        height:35px;
+        line-height: 35px;
+        outline: none;
+        border: 0;
+        background: #efefef;
+        font-size: 14px;
+      }
+      >span{
+        position: absolute;
+        width:25px;
+        height:25px;
+        top:50%;
+        margin-top: -12.5px;
+        right:55px;
+        cursor: pointer;
+        >i{
+          font-size: 25px;
+        }
+      }
+      >button{
+        float: left;
+        vertical-align:middle;
+        width:50px;
+        height:35px;
+        border: 0;
+        outline: none;
+        background: #f10215;
+        color: #fff;
+        cursor: pointer;
+        >i{
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

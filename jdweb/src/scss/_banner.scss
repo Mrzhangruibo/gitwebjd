@@ -11,11 +11,13 @@
   }
 }
 .banner-left{
-  padding-top: 15px;
+  position: absolute;
+  padding-top: 20px;
+  top:-20px;
   background: #fff;
   border-top:1px solid #cccccc;
   width:190px;
-  height: 455px;
+  height: 470px;
   .banner-left-list{
     width:172px;
     height:27px;
@@ -24,21 +26,26 @@
     &:hover{
       background: #d9d9d9;
     }
+    &:hover > .tree-view{
+      display: block;
+    }
     >a{
       text-decoration: none;
       color:#626262;
       font-size: 14px;
     }
     .tree-view{
+      display: none;
       position: absolute;
       top:0;
+      z-index: 66;
       left:190px;
       background: #fff;
       width:770px;
       height:450px;
       padding: 20px 10px;
       >p{
-        a{
+        >a{
           display: inline-block;
           height:24px;
           padding:0 10px;
@@ -63,16 +70,268 @@
             font-weight: bold;
             text-align: right;
           }
-          >a{
+          .twoline{
+            height:44px;
+            vertical-align: middle;
+          }
+          >p{
+            vertical-align: middle;
+            display: inline-block;
+            width:630px;
+          }
+          a{
             display: inline-block;
             border-left: 1px solid #ccc;
             padding: 0 5px;
             text-decoration: none;
             font-size: 12px;
             color:#666;
+            &:hover{
+              color: #f10215;
+            }
           }
         }
       }
     }
+  }
+}/*导航列表*/
+.banner-middle{
+  position: relative;
+  width:590px;
+  height:470px;
+  margin-left: 200px;
+  >ul{ //轮播图
+    width:100%;
+    height:100%;
+    >li{
+      position: absolute;
+      top:0;
+      left:0;
+      a{
+        display: block;
+        img{
+          display: block;
+        }
+      }
+    }
+
+  }
+  >.btn{
+    position: absolute;
+    bottom:20px;
+    left:50px;
+    >b{
+      display: inline-block;
+      width:8px;
+      height:8px;
+      border:2px solid #fff;
+      border-radius: 50%;
+      opacity: 0.5;
+      margin-left: 5px;
+      &:hover{
+        opacity: 1;
+        border-color:transparent;
+        background: #fff;
+        box-shadow:0 0 0 3px rgba(255,255,255,.3);
+      }
+    }
+  }
+  >span{
+    position: absolute;
+    width:24px;
+    height:40px;
+    top:50%;
+    margin-top: -20px;
+    background: #333333;
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    &:hover{
+      opacity: 0.7;
+      filter: alpha(opacity=70);
+    }
+  }
+  .left{
+    left:0;
+  }
+  .right{
+    right:0;
+    i{
+      font-size: 25px;
+    }
+  }
+}/*轮播图*/
+.banner-right-left{
+  width:190px;
+  height:470px;
+  margin-left: 10px;
+  >a{
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    &:before{
+      display: none;
+      content: "";
+      width:100%;
+      height:100%;
+      position: absolute;
+      top:0;
+      left:0;
+      background: rgba(255,255,255,.2);
+    }
+    &:hover{
+      &:before{
+        display: block;
+      }
+    }
+    img{
+      display: block;
+    }
+  }
+  a:nth-of-type(3){
+    margin: 0;
+  }
+}
+.banner-right-right{
+  width:190px;
+  height:470px;
+  background: #fff;
+  .login{
+    position: relative;
+    height:150px;
+    >p{
+      position: absolute;
+      top:-10px;
+      left:50%;
+      margin-left: -50px;
+      width:100px;
+      height:120px;
+      text-align: center;
+      >b{
+        position: relative;
+        display: block;
+        border-radius: 50%;
+        background: url("../img/no_login.jpg") no-repeat center/cover;
+        width: 70px;
+        height:70px;
+        box-shadow: 0 0 15px rgba(0,0,0,0.3);
+        &:after{
+          display: block;
+          content: '';
+          width:60px;
+          height:60px;
+          border:5px solid #ccc;
+          border-radius: 50%;
+          top:0;
+          left:0;
+        }
+      }
+      >span{
+        font-size: 12px;
+        color: #999;
+      }
+    }
+    >div{
+      width: 100%;
+      position: absolute;
+      bottom:10px;
+      left:0;
+      text-align: center;
+      a:nth-of-type(2){
+        background: #363634;
+        color: #e5d790;
+        margin-left: 5px;
+      }
+      a{
+        display: inline-block;
+        width:70px;
+        height:25px;
+        font-size: 12px;
+        text-decoration: none;
+        text-align: center;
+        line-height: 25px;
+        border-radius:13px;
+        box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+        color: #f10215;
+        &:hover{
+          background: #f10215;
+          color: #fff;
+        }
+      }
+    }
+  }//登录注册
+  .tab{
+    position: relative;
+    height: 125px;
+    .tab-header{
+      overflow: hidden;
+      font-size: 12px;
+      >p{
+        padding: 5px 0 5px 10px;
+        display: inline-block;
+        a:nth-of-type(1){
+          border-right: 1px solid #ccc;
+        }
+        >a{
+          display: inline-block;
+          padding: 0 10px;
+        }
+      }
+      >a{
+        display: inline-block;
+        padding-right: 15px;
+        &:hover{
+          color: #f10215;
+        }
+      }
+    }
+    .tab--{
+      position: absolute;
+      width:100%;
+      height: 96px;
+      bottom:0;
+      left:0;
+      >a{
+        display: block;
+        font-size: 12px;
+        line-height: 20px;
+        color: #999;
+        padding:0 10px;
+        @include eillpsis();
+        &:hover{
+          color: #f10215;
+        }
+      }
+    }
+    .tab-2{
+      display: none;
+    }
+  }//tab切换
+  .smlllog{
+    padding:0 10px;
+    .top-up{
+      border-top:1px solid #ddd;
+      >a{
+        display: inline-block;
+        width:22%;
+        margin:15px 0;
+        text-align: center;
+        color:#bea68d;
+        &:hover{
+          color: #f10215;
+        }
+        >i{
+         font-size: 20px;
+        }
+        >span{
+          display: block;
+          font-size: 12px;
+        }
+      }
+    }
+
   }
 }

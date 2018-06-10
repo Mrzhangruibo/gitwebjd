@@ -1,0 +1,251 @@
+@charset "utf-8";
+.recommended{
+  width:100%;
+  .recommended-box{
+    width:$autowidth;
+    height:450px;
+    overflow: hidden;
+    margin:auto;
+    h3{
+      width:350px;
+      height:60px;
+      padding:0 20px;
+      line-height: 60px;
+      font-weight: normal;
+      >a{
+        display: block;
+        >b{
+        font-weight: normal;
+        font-size: 22px;
+          color: #222;
+        }
+        >i{
+          font-size: 26px;
+          color: #f10215;
+        }
+        >span{
+          font-size: 14px;
+          color:#999;
+        }
+      }
+
+    }
+  }
+}
+.re-box-left,.li-box-left{
+  height:100%;
+  width:390px;
+  background: #fff;
+  >.re-title{
+    width:100%;
+    overflow: hidden;
+    background: #f7f7f7;
+    >a{
+      float: left;
+      width: 20%;
+      height: 34px;
+      line-height: 34px;
+      display: inline-block;
+      text-align: center;
+      font-size: 12px;
+      &:hover{
+        color:#f10215;
+      }
+    }
+  }
+}
+.re-box-middle,.li-box-middle{
+  background: #fff;
+  height:100%;
+  margin-left: 10px;
+}
+.re-box-right,.li-box-right{
+  background: #fff;
+  height:100%;
+  margin-left: 10px;
+}
+.fashion{
+  width:100%;
+  >div{
+    margin: auto;
+    width:$autowidth;
+    text-align: center;
+    >span{
+      position: relative;
+      display: block;
+      margin: auto;
+      text-align: center;
+      width: 250px;
+      padding: 0 50px;
+      font-size: 28px;
+      color: #222;
+      line-height: 45px;
+      &:before{
+        display: block;
+        content: '';
+        position: absolute;
+        width:50px;
+        height:3px;
+        background: #222;
+        top:23px;
+      }
+      &:after{
+        display: block;
+        content: '';
+        position: absolute;
+        width:50px;
+        height:3px;
+        background: #222;
+        top:23px;
+        right:50px;
+      }
+    }
+  }
+}
+.talent-show{
+  width:100%;
+  height:450px;
+  .tal-box{
+    width:$autowidth;
+    margin:auto;
+    .tal-common {
+       width:390px;
+       height:450px;
+       background: #fff;
+      .sport{
+        padding: 0 20px;
+        >a{
+          display: block;
+          img{
+            display: block;
+          }
+        }
+        >p{
+          margin-top: 10px;
+          overflow: hidden;
+          >a{
+            display: block;
+            >img{
+              display: block;
+            }
+          }
+          a:nth-of-type(1){
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+.tal-box-left,.tal-box-midden{
+  margin-right: 10px;
+}
+.tal-box-right,.tal-box-common{
+  position: relative;
+  width:390px;
+  height:100%;
+  >p{
+    position: absolute;
+    right:0;
+    top:20px;
+    width:360px;
+    height:420px;
+    border: 5px solid #222;
+  }
+  >a{
+    position: absolute;
+    left:0;
+    top:0;
+    width:370px;
+    height:430px;
+    >img{
+      display: block;
+    }
+  }
+}
+.wolf{
+  width:100%;
+  height:450px;
+  .wolf-box{
+    width:$autowidth;
+    margin:auto;
+    height:100%;
+  }
+}
+.wolf-box-middle{
+  width:390px;
+  height:450px;
+  overflow: hidden;
+  >a{
+    float: left;
+    width:140px;
+    height:210px;
+    display: block;
+    background: #ffffff;
+    padding: 10px 25px 0 25px;
+    margin-bottom: 10px;
+    text-align: center;
+    &:hover{
+      color: #f10215;
+    }
+    >img{
+      width:120px;
+      height:120px;
+    }
+    >p{
+      @include eillpsis;
+      width:150px;
+      line-height: 22px;
+      font-size: 14px;
+      margin: 20px 0 10px 0;
+    }
+    >span{
+      color: #f10215;
+    }
+  }
+  a:nth-of-type(odd){
+    margin-right: 10px;
+  }
+}
+.wolf-box-right{
+  width:350px;
+  height:410px;
+  padding: 20px;
+  background: #fff;
+  >p{
+    height:45px;
+    line-height: 45px;
+    margin-bottom: 20px;
+    >a{
+      display: block;
+      >span{
+        display: inline-block;
+        vertical-align: middle;
+      }
+      >img{
+        vertical-align: middle;
+        border: 1px solid #999999;
+      }
+    }
+  }
+  .big-pic{
+    >a{
+      display: block;
+      img{
+        display: block;
+      }
+    }
+  }
+  .small-pic{
+    overflow: hidden;
+    margin-top: 25px;
+    a{
+      float: left;
+      display: block;
+      margin-right: 25px;
+    }
+    a:nth-of-type(3){
+      margin: 0;
+    }
+  }
+}

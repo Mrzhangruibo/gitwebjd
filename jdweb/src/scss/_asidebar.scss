@@ -1,0 +1,71 @@
+@charset "utf-8";
+.sidebar{
+  position: fixed;
+  right:0;
+  bottom: 0;
+  width:6px;
+  height:700px;
+  background: #7a6e6e;
+  >ul{
+    position: absolute;
+    left:-35px;
+    top:50%;
+    margin-top: -90px;
+    width:35px;
+    height:180px;
+    >li{
+      height:35px;
+      line-height: 35px;
+      background: #7a6e6e;
+      color: #fff;
+      margin-bottom: 2px;
+      border-radius: 5px 0 0 5px/5px 0 0 5px;
+      &:hover{
+        background: #f10215;
+      }
+      >a{
+        display: block;
+        text-align: center;
+        >i{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  >div{
+    position: absolute;
+    width:35px;
+    bottom: 0;
+    left:-35px;
+    >p{
+      height:35px;
+      line-height: 35px;
+      background: #7a6e6e;
+      color: #fff;
+      margin-bottom: 2px;
+      border-radius: 5px 0 0 5px/5px 0 0 5px;
+      &:hover{
+        background: #f10215;
+      }
+      >a{
+        display: block;
+        text-align: center;
+        >i{
+          font-size: 20px;
+        }
+      }
+    }
+  }
+  >span{
+    position: absolute;
+    width:64px;
+    height:160px;
+    left:-58px;
+    top:0;
+    >a{
+      display: block;
+      height: 100%;
+      background: url("../img/rightnav.png") no-repeat;
+    }
+  }
+}

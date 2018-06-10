@@ -1,0 +1,50 @@
+.box-shadow {
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.2); }
+  .box-shadow > h1 {
+    width: 1210px; }
+
+.main {
+  width: 1210px;
+  margin: 70px auto 0;
+  height: 407px; }
+  .main > form {
+    width: 400px;
+    margin: auto; }
+    .main > form > div {
+      margin-top: 35px;
+      height: 50px;
+      border: 1px solid #bdbdbd;
+      overflow: hidden; }
+      .main > form > div > label {
+        float: left;
+        display: block;
+        width: 70px;
+        padding-right: 10px;
+        font-size: 14px;
+        height: 50px;
+        text-align: right;
+        line-height: 50px; }
+      .main > form > div > input {
+        display: block;
+        padding: 10px 0;
+        text-indent: 15px;
+        height: 30px;
+        float: left;
+        width: 254px;
+        outline: none;
+        border: 0; }
+    .main > form > p {
+      margin-top: 35px; }
+      .main > form > p > input {
+        display: block;
+        width: 100%;
+        height: 50px;
+        outline: none;
+        border: 0;
+        background: #f10215;
+        color: #fff;
+        font-size: 16px;
+        cursor: pointer;
+        margin-bottom: 30px; }
+
+/*# sourceMappingURL=registor.css.map */

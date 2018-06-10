@@ -1,0 +1,138 @@
+@charset "utf-8";
+.footer{
+  width:100%;
+  .footer-box{
+    width:$autowidth;
+    margin:auto;
+    overflow: hidden;
+    padding: 30px 0;
+    >span{
+      float: left;
+      display: block;
+      width:25%;
+      text-align: center;
+      height: 42px;
+      line-height: 42px;
+      >i{
+        display: inline-block;
+        height: 42px;
+        line-height: 42px;
+        font-style: normal;
+        vertical-align: middle;
+        font-size: 18px;
+        color: #444;
+        font-weight: 700;
+      }
+      >b{
+        display: inline-block;
+        vertical-align: middle;
+        width:36px;
+        height:42px;
+        background-image: url("../img/sprite.footer.png");
+        background-repeat: no-repeat;
+      }
+      @for $i from 1 through 4{
+       &:nth-of-type(#{$i}) b{
+           background-position: -(($i - 1)*41)+px  -191px;
+       }
+    }
+    }
+  }
+}
+.footer-bottom{
+  width:$autowidth;
+  margin:20px auto 0;
+  overflow: hidden;
+  >ul{
+    width:100%;
+    height:160px;
+    overflow: hidden;
+    margin-bottom: 20px;
+    >li{
+      float: left;
+      width:88px;
+      padding-right: 110px;
+      font-size: 14px;
+      >h5{
+        line-height: 22px;
+        margin-bottom: 5px;
+      }
+      >a{
+        display: block;
+        color: #999;
+        line-height: 22px;
+        &:hover{
+          color: #f10215;
+        }
+      }
+
+    }
+  }
+  >div{
+    margin-top:20px;
+    font-size: 12px;
+    color: #999;
+    overflow: hidden;
+    padding: 0 65px;
+    >a{
+      position: relative;
+      display: block;
+      float: left;
+      padding:0 10px;
+      text-align: center;
+      &:after{
+        position: absolute;
+        content:'' ;
+        width:1px;
+        height:100%;
+        right:0;
+        top:0;
+        background: #999;
+      }
+      &:hover{
+        color: #e83632;
+      }
+    }
+  }
+  a:hover{
+    color: #e83632;
+  }
+  >p{
+    text-align: center;
+    line-height: 22px;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
+    b{
+      font-weight: normal;
+    }
+  }
+}
+.footer-bottom .china-map{
+  float: right;
+  padding: 0;
+  width:200px;
+  height:150px;
+  background: url("../img/sprite.footer.png") no-repeat 0 0;
+  >h5{
+    text-align: center;
+  }
+  >p{
+    padding: 0 10px;
+    font-size: 12px;
+    color: #999;
+    line-height: 20px;
+  }
+  >div{
+    padding: 0 10px;
+    line-height: 20px;
+    text-align: right;
+    font-size: 12px;
+    color: #999999;
+    >a{
+      &:hover{
+        color: #e83632;
+      }
+    }
+  }
+}
