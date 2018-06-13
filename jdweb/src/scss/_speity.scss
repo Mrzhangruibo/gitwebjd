@@ -3,9 +3,93 @@
   width:100%;
   height:385px;
   .speity-box{
+    position: relative;
     width:$autowidth;
     margin:auto;
     height:385px;
+    overflow: hidden;
+    .speityLeft{
+      left:0;
+    }
+    .speityRight{
+      right:0;
+    }
+    >span{
+      position: absolute;
+      width:20px;
+      height:40px;
+      top:50%;
+      margin-top: -20px;
+      background: #333;
+      filter: alpha(opacity=500);
+      opacity: 0.3;
+      color: #fff;text-align: center;
+      line-height: 40px;
+      z-index: 10;
+    }
+    ul:nth-of-type(1){
+      left:0;
+    }
+    >ul{
+      width: 100%;
+      height:332px;
+      position: absolute;
+      top:0;
+      left:1190px;
+      overflow: hidden;
+      >li{
+        width:350px;
+        padding: 20px;
+        background: #ffffff;
+        >a{
+          display: block;
+          >h3{
+            font-weight: normal;
+            overflow: hidden;
+            height: 40px;
+            line-height: 40px;
+            >p{
+              display: inline-block;
+              vertical-align: middle;
+              font-size: 22px;
+              color: #222;
+            }
+            >i{
+              display: inline-block;
+              vertical-align: middle;
+              color: #e83632;
+              font-size: 25px;
+            }
+            >span{
+              display: inline-block;
+              vertical-align: middle;
+              color: #999999;
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+    >p{
+      position: absolute;
+      width: 100%;
+      height:20px;
+      bottom:20px;
+      left:0;
+      text-align: center;
+      >a{
+        display: inline-block;
+        width:14px;
+        height:14px;
+        border-radius: 50%;
+        border: 2px solid #666;
+        margin:0 5px;
+      }
+      .hover{
+          border-color: transparent;
+          background: #f10215;
+      }
+    }
   }
 }
 .go-enough{
@@ -15,6 +99,35 @@
     width:$autowidth;
     margin:auto;
     min-height: 300px;
-    background: #fff;
+    >ul{
+      width: 100%;
+      overflow: hidden;
+      >li{
+        width: 228px;
+        height:305px;
+        float: left;
+        margin: 0 5px 10px 5px;
+        >a{
+          padding: 30px 30px 0 30px;
+          display: block;
+          height: 275px;
+          background: #fff;
+          text-align: center;
+          color: #f10215;
+          >p{
+            width:100%;
+            height:29px;
+            font-size: 14px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            text-overflow: ellipsis;
+            word-break: break-all;
+            color: #999999;
+            overflow: hidden;
+            
+          }
+        }
+      }
+    }
   }
 }

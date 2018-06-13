@@ -66,8 +66,9 @@ body{
   }
 }
 #bigBox > .header>.adver-top{/*头部隐藏的盒子*/
-  display: none;
   width:100%;
+  height: 0;
+  overflow: hidden;
   background: blue;
   .adv-top-auto{
     position: relative;

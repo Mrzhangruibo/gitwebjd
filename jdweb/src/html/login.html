@@ -35,7 +35,7 @@
                <div class="login-form">
                    <p>京东不会以任何理由要求您转账汇款，谨防诈骗。</p>
                    <h4>账户登录</h4>
-                   <form action="">
+                   <form method="post">
                        <div>
                            <label for="username"></label>
                            <input type="text" title="用户名" name="username" id="username" placeholder="邮箱/用户名/已验证手机">
@@ -47,7 +47,7 @@
                        <p>
                            <a href="">忘记密码</a>
                        </p>
-                       <input type="submit" name="submit" id="submit" title="登录" value="登录">
+                       <input type="button" name="submit" id="submit" title="登录" value="登录">
                    </form>
                    <div class="registered">
                        <p>
@@ -55,7 +55,7 @@
                            <a href=""><i></i>微信</a>
                        </p>
                        <div>
-                           <a href=""><i class="iconfont icon-rightarrow"></i>立即注册</a>
+                           <a href="registor.html"><i class="iconfont icon-rightarrow"></i>立即注册</a>
                        </div>
                    </div>
                </div>
@@ -88,5 +88,7 @@
            <div>Copyright © 2004-2018  京东JD.com 版权所有</div>
         </div>
     </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../script/js/login.js"></script>
 </body>
 </html>

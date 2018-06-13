@@ -37,8 +37,10 @@ h1{
 .main{
   position: relative;
   width:1190px;
-  min-height: 300px;
-  >div{
+  margin: auto;
+  
+  .hidden{
+   display: none;
    position: absolute;
     width:689px;
     height:98px;
@@ -67,6 +69,265 @@ h1{
       width:98px;
       height:98px;
       background: url(//misc.360buyimg.com/user/cart/css/i/no-login-icon.png) no-repeat;
+    }
+  }
+}
+.cart-shop{
+  width:990px;
+  margin: auto;
+  .cart-shop-all{
+    width:100%;
+    height:37px;
+    line-height: 37px;
+    font-size: 16px;
+    color: #e4393c;
+    font-weight: bold;
+  }
+  .list-all{
+    width:100%;
+    height:45px;
+    line-height:45px;
+    font-size: 12px;
+    color: #999999;
+    background: #f3f3f3;
+     >input{
+       margin-left: 15px;
+       display: inline-block;
+       vertical-align: middle;
+     }
+     >label{
+       display: inline-block;
+       vertical-align: middle;
+     }
+    >span{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    span:nth-of-type(1){
+      width:475px;
+      margin-left: 75px;
+    }
+    span:nth-of-type(2){
+      width:95px;
+    }
+    span:nth-of-type(3){
+      width:130px;
+    }
+    span:nth-of-type(4){
+      width:60px;
+    }
+  }
+  .merchant-box{
+    padding-left: 10px;
+    margin-top: 15px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    border-bottom: 2px solid #7a6e6e;
+    >input{
+      vertical-align: middle;
+    }
+    >label{
+      display: inline-block;
+      vertical-align: middle;
+    }
+  }
+  .shop-list{
+    width:990px;
+    >li{
+      width:970px;
+      height: 103px;
+      padding: 15px 10px;
+      background: #fff4e8;
+      overflow: hidden;
+      >p{
+        float: left;
+        width:30px;
+        height: 103px;
+      }
+      >a{
+        float: left;
+        display: block;
+        width: 300px;
+        height: 80px;
+        >img{
+          width: 80px;
+          height:80px;
+          vertical-align: middle;
+        }
+        >span{
+          vertical-align: middle;
+          display: inline-block;
+          margin-left: 10px;
+          width:200px;
+          height: 80px;
+          font-size: 12px;
+          line-height: 20px;
+          >em{
+            font-style: normal;
+            color: #333;
+            &:hover{
+              color: #e83632;
+            }
+          }
+        }
+      }
+    }
+  }
+  .list-one{
+    float: left;
+    width:130px;
+    height:80px;
+    margin-left: 30px;
+    font-size: 12px;
+    >span{
+      display: block;
+      line-height: 20px;
+      color: #666;
+    }
+  }
+  .list-two{
+    float: left;
+    display: block;
+    text-align: right;
+    width:150px;
+    height:80px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .list-three{
+    float: left;
+    width:80px;
+    height:22px;
+    background: #ffffff;
+    margin-left: 35px;
+    border: 1px solid #999999;
+    .num{
+      width:46px;
+      height:15px;
+      border: 0;
+      outline: none;
+      text-align: center;
+      line-height: 22px;
+    }
+    b:nth-of-type(1){
+      border-right: 1px solid #999999;
+    }
+    b:nth-of-type(2){
+      border-left: 1px solid #999999;
+    }
+    >b{
+      width:11px;
+      line-height: 22px;
+      display: inline-block;
+      cursor: pointer;
+    }
+  }
+  .list-four{
+    float: left;
+    display: block;
+    text-align: right;
+    width:110px;
+    height:80px;
+    line-height: 20px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  .list-five{
+    float: left;
+    width:75px;
+    height:80px;
+    margin-left: 28px;
+    >span{
+      display: block;
+      line-height: 20px;
+      font-size: 12px;
+      color: #666;
+      cursor: pointer;
+      &:hover{
+        color:#e83632;
+      }
+    }
+  }
+}
+.settlement{
+  margin-top: 30px;
+  padding: 0 0 0 10px;
+  width:968px;
+  height:50px;
+  border:1px solid #7a6e6e;
+  .set-left{
+    float: left;
+    line-height: 50px;
+    font-size: 12px;
+    color: #666;
+    cursor: pointer;
+    >input{
+      vertical-align: middle;
+    }
+    >label{
+      display: inline-block;
+      vertical-align: middle;
+    }
+    >span{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+    >b{
+      display: inline-block;
+      vertical-align: middle;
+      margin-left: 10px;
+    }
+  }
+  .set-right{
+    float: right;
+    width: 650px;
+    >span{
+      display: block;
+      float: left;
+      margin-left: 270px;
+      font-size: 12px;
+      color: #999;
+      line-height: 50px;
+      >i{
+        font-style: normal;
+        font-weight: bold;
+        color: #e83632;
+      }
+    }
+    >p{
+      float: left;
+      width: 137px;
+      margin-left: 10px;
+      >span{
+        display: block;
+        height:25px;
+        font-size: 12px;
+        color: #999999;
+        line-height: 25px;
+        >i{
+          font-style: normal;
+          color: #999999;
+        }
+        >b{
+          color: #e4393c;
+          font-size: 16px;
+        }
+      }
+    }
+    >a{
+      display: block;
+      text-align: center;
+      color: #fff;
+      font-weight: bold;
+      font-size: 18px;
+      float: right;
+      width:96px;
+      height:50px;
+      line-height: 50px;
+      background: #e83632;
     }
   }
 }

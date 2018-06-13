@@ -22,30 +22,34 @@
                 </a>
                 <span>欢迎注册</span>
             </p>
-            <a href="">
+            <a href="login.html">
                 <span>已有账号</span>
                 <span>请登录></span>
             </a>
         </h1>
     </div>
     <div class="main">
-        <form action="">
+        <form action="../../php/registor.php" method="post">
             <div>
                 <label for="username">用户名:</label>
                 <input type="text" name="username" id="username" placeholder="您的账户名和登录名">
             </div>
+            <span class="user"></span>
             <div>
                 <label for="password">密码:</label>
                 <input type="password" name="password" id="password" placeholder="建议使用两种或两种以上字符组合">
             </div>
+            <span class="pass"></span>
             <div>
                 <label for="repass">确认密码:</label>
                 <input type="password" name="repass" id="repass" placeholder="再次输入密码">
             </div>
+            <span class="dbpass"></span>
             <div>
                 <label for="tel">手机:</label>
                 <input type="text" name="tel" id="tel" placeholder="建议使用常用手机号">
             </div>
+            <span class="telphone"></span>
             <p>
                 <input type="submit" value="立即注册" name="submit" id="submit">
             </p>
@@ -78,5 +82,7 @@
         <div>Copyright © 2004-2018  京东JD.com 版权所有</div>
     </div>
 </div>
+    <script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="../script/js/registor.js"></script>
 </body>
 </html>

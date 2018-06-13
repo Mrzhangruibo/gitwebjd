@@ -30,6 +30,48 @@ h1{
         width:555px;
         height:37px;
         background: #ffffff;
+        >ul{
+          position: absolute;
+          display: none;
+          width:500px;
+          top:37px;
+          left:0;
+          background: #ffffff;
+          z-index: 999;
+          border: 1px solid #e83632;
+          font-size: 12px;
+          >li{
+            width:100%;
+            color: #999;
+            >a{
+              position: relative;
+              padding: 0 20px;
+              display: block;
+              height:30px;
+              line-height: 30px;
+              >em{
+                position: absolute;
+                left:20px;
+                top:0;
+                text-align: center;
+                line-height: 30px;
+                font-style: normal;
+              }
+              >b{
+                font-weight: normal;
+                position: absolute;
+                top:0;
+                right:20px;
+                text-align: center;
+                line-height: 30px;
+              }
+              &:hover{
+                color: #ffffff;
+                background: #f10215;
+              }
+            }
+          }
+        }
         .text-search{
           vertical-align: middle;
           width:500px;
@@ -55,7 +97,7 @@ h1{
         }
         button{
           vertical-align: middle;
-          width:50px;
+          width:48px;
           height:35px;
           border: 0;
           outline: none;
