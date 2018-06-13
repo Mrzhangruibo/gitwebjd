@@ -4,6 +4,7 @@
                dataType:'json',
                url:'../../php/banner.php'
            }).done(function (data) {
+               console.log(data);
                $('.view').children().each(function (index) {
                    var inner=`<a><img src="${data.lunbo[index].url}" title="${data.lunbo[index].sid}" alt=""></a>`;
                    $(this).html(inner);
@@ -28,7 +29,7 @@
                function shop() {
                    var shop='';
                    for (var i=0;i<data.shop.length;i++){
-                       shop+=`<li><a href="" sid="${data.shop[i].sid}"><img src="${data.shop[i].url}" alt=""><p>${data.shop[i].title}</p><span><b>¥</b>${data.shop[i].price}</span></a></li>`;
+                       shop+=`<li><a href="details.html?sid=${data.shop[i].sid}" title="${data.shop[i].sid}"><img src="${data.shop[i].url.split(",")[0]}" alt=""><p>${data.shop[i].title}</p><span><b>¥</b>${data.shop[i].price}</span></a></li>`;
                    }
                    $('.enough-box ul').html(shop);
                }

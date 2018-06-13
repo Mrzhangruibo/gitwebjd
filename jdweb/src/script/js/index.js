@@ -16,7 +16,6 @@
             $('.top-search').hide();
         }
       });//滚动条超过700显示顶部搜索
-
        $('.text-search').on('input',function () {//搜索
        $.ajax({
         url:"https://suggest.taobao.com/sug?code=utf-8&q="+$('.text-search').val()+"&callback=",

@@ -1,5 +1,22 @@
 ;(
     function () {
+      $.ajax({
+          type:'post',
+          url:"../../php/details.php",
+          dataType:'json',
+          data:{
+              sid:location.href.substr(-1,1)
+          }
+      }).done(function (data) {
+          console.log(data);
+          $('.wrap-right h3').html(data.title);
+          $('.price b').html("¥"+data.price);
+          $('.spic').attr('src',data.url.split(",")[1]);
+          $('.bpic').attr('src',data.url.split(",")[1]);
+          $('.box ul li').each(function (index) {
+             $(this).find('img').attr('src',data.url.split(",")[index+1]);
+          });
+      });
       function Scale() {
           var that=this;
         this.sbox=$('.sbox');
@@ -26,7 +43,6 @@
             that.sc.css('visibility','hidden');
           });
           this.Oli.on('click',function () {
-             console.log($(this).children('img').attr("src"));
              that.spic.attr("src",$(this).children('img').attr("src"));
              that.bpic.attr("src",$(this).children('img').attr("src"));
           })
