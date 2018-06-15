@@ -108,11 +108,6 @@
               <item name="jdweb" type="b2602c69:ProjectViewProjectNode" />
               <item name="jdweb" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="jdweb" type="b2602c69:ProjectViewProjectNode" />
-              <item name="jdweb" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -176,15 +171,15 @@
       <workItem from="1528887041217" duration="8793000" />
       <workItem from="1528897535044" duration="7000" />
       <workItem from="1528937897958" duration="21706000" />
-      <workItem from="1529027085423" duration="9976000" />
+      <workItem from="1529027085423" duration="10305000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="245029000" />
+    <option name="totallyTimeSpent" value="245358000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="784" extended-state="7" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2877013" />
       <window_info anchor="bottom" id="TODO" order="6" />
