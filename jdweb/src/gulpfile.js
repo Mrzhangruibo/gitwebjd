@@ -18,31 +18,31 @@ var imagemin=require('gulp-imagemin');//图片压缩插件
 // });
 //一 压缩HTML
 gulp.task('uglifyhtml',function () {//压缩html
-    gulp.src('html/index.html').pipe(html()).pipe(gulp.dest('../dist/html/'));
+    gulp.src('html/*.html').pipe(html()).pipe(gulp.dest('../dist/html/'));
 });
-gulp.task('watchhtml',function () { //监听压缩
-    gulp.watch('html/index.html',function(){
-        gulp.run('uglifyhtml');
-    })
-}) ;
-//二 编译sass
- gulp.task('sass',function () {
-     gulp.src('scss/*scss').pipe(sass()).pipe(gulp.dest('./css/'));
- }) ;
- gulp.task('watchsass',function () {
-     gulp.watch('scss/*scss',function () {
-         gulp.run('sass');
-     })
- });
+// gulp.task('watchhtml',function () { //监听压缩
+//     gulp.watch('html/index.html',function(){
+//         gulp.run('uglifyhtml');
+//     })
+// }) ;
+// //二 编译sass
+//  gulp.task('sass',function () {
+//      gulp.src('scss/*scss').pipe(sass()).pipe(gulp.dest('./css/'));
+//  }) ;
+//  gulp.task('watchsass',function () {
+//      gulp.watch('scss/*scss',function () {
+//          gulp.run('sass');
+//      })
+//  });
  //三压缩css
  gulp.task('css',function () {
-    gulp.src('css/index.css').pipe(css()).pipe(gulp.dest('../dist/css/'))
+    gulp.src('css/*.css').pipe(css()).pipe(gulp.dest('../dist/css/'))
  });
- gulp.task('watchcss',function(){
-    gulp.watch('css/index.css',function(){
-        gulp.run('css');
-    })
- });
+ // gulp.task('watchcss',function(){
+ //    gulp.watch('css/*.css',function(){
+ //        gulp.run('css');
+ //    })
+ // });
  //四页面自刷新
  // gulp.task('connect',function () {
  //    connect.server({
@@ -56,12 +56,12 @@ gulp.task('watchhtml',function () { //监听压缩
  // gulp.task('watchconnect',function () {
  //    gulp.watch(['html/index.html','css/index.css'],['connecthtml']);
  // });
- // gulp.task('imagemin',function () {
- //      gulp.src('img/*.png')
- //          .pipe(imagemin())
- //          .pipe(gulp.dest('../dist/img'));
- // });
-gulp.task('default',['watchhtml','watchsass','watchcss']);
+ gulp.task('imagemin',function () {
+      gulp.src('img/*.png')
+          .pipe(imagemin())
+          .pipe(gulp.dest('../dist/img'));
+ });
+// gulp.task('default',['watchhtml','watchcss']);
 
 // gulp.task('css',function () {
 //      gulp.src('css/index.css').pipe(css()).pipe(gulp.dest('../dist/css/'))
